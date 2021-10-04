@@ -1,0 +1,5 @@
+#header{
+  display: flex;
+  min-height: 40px;
+  padding: 10px 15px;
+}
