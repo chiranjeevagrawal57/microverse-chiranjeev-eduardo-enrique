@@ -26,13 +26,18 @@
     <section id="pricing">
         Pricing
     </section>
-    <form action="" id="form" onsubmit=>
-        <input type="email" id="email" placeholder="Enter your email">
-        <input type="submit" id="submit" value="Submit">
-
+    <form action="" id="form">
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <input type="submit" id="submit" name="submit" value="Submit">
     </form>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
+    <script>
+      document.getElementById('submit').addEventListener('click', async () =>{
+        await fetch('https://www.freecodecamp.com/email-submit')
+        return false;
+      });
+    </script>
     <!--
 
     Hello Camper!
