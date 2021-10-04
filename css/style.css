@@ -1,10 +1,17 @@
-#header{
-  display: flex;
-  min-height: 40px;
-  padding: 10px 15px;
-  justify-content: space-between;
+#header {
+    display: flex;
+    min-height: 40px;
+    padding: 10px 15px;
+    justify-content: space-between;
 }
-#nav-bar{
-  display: flex;
-  gap: 15px;
+
+#nav-bar {
+    display: flex;
+    gap: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
 }
